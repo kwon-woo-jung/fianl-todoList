@@ -1,0 +1,8 @@
+package edu.kh.todo.model.dto;
+
+
+public class Todo {
+	Todo_No();
+	Todo_Title();
+	
+}

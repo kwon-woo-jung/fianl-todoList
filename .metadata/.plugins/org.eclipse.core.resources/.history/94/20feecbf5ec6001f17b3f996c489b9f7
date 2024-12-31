@@ -1,0 +1,11 @@
+package edu.kh.todo.model.dto;
+
+
+public class Todo {
+	private int todoNo;
+	private int todoTitle;
+	private int todoDetail;
+	private int todoComplete;
+	
+	
+}

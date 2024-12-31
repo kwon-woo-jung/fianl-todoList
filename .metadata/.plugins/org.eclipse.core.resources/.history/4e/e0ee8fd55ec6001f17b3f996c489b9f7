@@ -1,0 +1,12 @@
+package edu.kh.todo.model.dto;
+
+
+public class Todo {
+	private int todoNo;
+	private String todoTitle;
+	private String todoDetail;
+	private String todoComplete;
+	private String regDate;
+	
+	
+}
