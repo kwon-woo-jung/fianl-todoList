@@ -1,0 +1,23 @@
+package edu.kh.todo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import edu.kh.todo.model.dto.Todo;
+import edu.kh.todo.modle.service.TodoService;
+
+@Controller
+@RequestMapping("/ajax")
+public class SelectListController {
+	
+@Autowired
+private TodoService todoService;
+
+public List<Todo> selectTodoList() {
+	return todoService.getTodoList();
+}
+
+}

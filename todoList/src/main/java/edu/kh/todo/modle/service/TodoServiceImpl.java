@@ -96,13 +96,32 @@ public class TodoServiceImpl implements TodoService {
 		// TODO Auto-generated method stub
 		return mapper.changeComplete(todo);
 	}
-	
-	
-	
-	
-	
-	
-}
+
+	// 전체 할 일 개수 조회
+	@Override
+	public int getTotalCount() {
+		return mapper.getTotalCount();
+	}
+
+	// 완료된 할 일 개수 조회
+	@Override
+	public int getCompleteCount() {
+		return 0;
+	}
+
+	// 할일 목록 조회
+		@Override
+		public List<Todo> selectList() {
+			return mapper.selectAll();
+		}
+
+		@Override
+		public int todoDelete(int todoNo) {
+			return 0;
+		}
+		
+		
+	}
 
 
 

@@ -12,16 +12,15 @@ todocompleteBtn.addEventListener("click", e => {
 
   // 요소.dataset : data-* 속성에 저장된 값 반환
   // data-todo-no 세팅한 속성값 얻어오기
-  const todoNo = e.target.dataset.todoNo;
 
+  const todoNo = e.target.dataset.todoNo;
   let todocomplete = e.target.innerText; // 기존 완료 여부 값 얻어오기
 
   // Y <-> N
   todocomplete = (todocomplete === 0) ? 1 : 0;
 
   // 완료 여부 수정 요청하기
-  location.href 
-  = `/todo/changetodoComplete?todoNo${todoNo}&todocomplete=${todocomplete}`;
+  location.href = `/todo/changetodoComplete?todoNo${todoNo}&todocomplete=${todocomplete}`;
 
   // console.log(todoNo);
 });

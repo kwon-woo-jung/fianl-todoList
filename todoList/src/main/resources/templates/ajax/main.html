@@ -27,7 +27,7 @@
     </div>
 
     <div>
-      <textarea id="todoContent" 
+      <textarea id="todoDetail" 
         cols="50" rows="5" placeholder="상세 내용"></textarea>
     </div>
 
@@ -57,8 +57,13 @@
       <th>등록 날짜</th>
     </thead>
 
+    <td>
+      <a href="/ajax/detail?todoNo=2"></a>
+    </td>
+
+
+
     <tbody id="tbody">
-      
     </tbody>
 
   </table>
@@ -87,7 +92,7 @@
 
     <div class="popup-row">
       [내용]
-      <div id="popupTodoContent"></div>
+      <div id="popupTodoDetail"></div>
     </div>
 
     <div class="btn-container">
@@ -112,7 +117,7 @@
     </div>
 
     <div class="popup-row">
-      <textarea id="updateContent" cols="45" rows="10"></textarea>
+      <textarea id="updateDetail" cols="45" rows="10"></textarea>
     </div>
 
     <div class="btn-container">
@@ -135,7 +140,7 @@
   <th:block th:replace="~{common/footer}"></th:block>
 
   
-  <scrip src="/js/ajax-main.js"></scrip>
+  <script src="/js/ajax-main.js"></script>
   
   
 
