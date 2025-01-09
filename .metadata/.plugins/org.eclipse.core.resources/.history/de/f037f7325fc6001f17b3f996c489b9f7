@@ -1,7 +1,0 @@
-package edu.kh.todo.modle.service;
-
-
-@Service
-public class TodoServiceImpl implements TodoService {
-
-}

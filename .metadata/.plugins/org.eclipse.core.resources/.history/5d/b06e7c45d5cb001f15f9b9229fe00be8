@@ -60,8 +60,6 @@ public interface TodoService {
 	 */
 	int todoDelete(int todoNo);
 
-	int todoUpdate(Todo todo);
-
 
 
 
